@@ -1,0 +1,1969 @@
+!SESSION 2009-05-23 12:25:08.796 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.fullversion=GNU libgcj 4.3.3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-23 12:25:15.392
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-23 12:25:15.392
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-23 12:25:15.392
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-23 12:25:15.393
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 12:25:36.027
+!MESSAGE Plugin org.openoffice.ide.eclipse.core, extension org.eclipse.ui.perspectiveExtensions
+Attribute 'relative' not defined.  This attribute is required when relationship="right".
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 12:25:36.028
+!MESSAGE Unable to process element: view in perspective extension: null
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-23 12:25:42.877
+!MESSAGE OOEclipseIntegration started
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-23 12:25:47.848
+!MESSAGE Java UNO resources changes are now listened
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-23 12:25:47.874
+!MESSAGE Resources changes are now listened
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 13:56:04.919
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 13:56:04.920
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 13:57:07.782
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 13:57:07.783
+!MESSAGE Failed to execute runnable (java.util.ConcurrentModificationException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.util.ConcurrentModificationException)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 15:50:45.857
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 15:50:45.857
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 15:50:58.670
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 15:50:58.670
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 15:51:10.504
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 15:51:10.505
+!MESSAGE Failed to execute runnable (java.util.ConcurrentModificationException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.util.ConcurrentModificationException)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.jface.window.Window.runEventLoop(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.window.Window.open(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.ui.actions.NewWizardAction.run(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.actions.NewWizardDropDownAction.run(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.jface.action.Action.runWithEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.access$2(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem$6.handleEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runDeferredEvents(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...30 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 16:19:43.159
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 16:19:43.159
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 16:19:48.342
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 16:19:48.342
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer.shellIconified(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.TypedListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Shell.gtk_unmap_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.core.resources 4 2 2009-05-23 16:31:28.524
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+   at org.openoffice.ide.eclipse.core.ResourceChangesHandler.resourceChanged(Unknown Source)
+   at org.eclipse.core.internal.events.NotificationManager$1.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.runtime.SafeRunner.run(org.eclipse.equinox.common_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.notify(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.endOperation(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.jdt.core.JavaCore.run(org.eclipse.jdt.core_3.2.3.v_686_R32x.jar.so)
+   at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 22:18:31.186
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 22:18:31.186
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 22:18:36.443
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 22:18:36.443
+!MESSAGE Failed to execute runnable (java.util.ConcurrentModificationException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.util.ConcurrentModificationException)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-23 22:20:28.102
+!MESSAGE "Delete" did not complete normally.  Please see the log for more information.
+
+!ENTRY org.eclipse.ui 4 0 2009-05-23 22:20:28.102
+!MESSAGE -1
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$ExitListener.left(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeModel.exit(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeModel$DocumentListener.documentChanged(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.replace(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.core.internal.filebuffers.SynchronizableDocument.replace(org.eclipse.core.filebuffers_3.2.1.r321_v20060721.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.replace(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.core.internal.filebuffers.SynchronizableDocument.replace(org.eclipse.core.filebuffers_3.2.1.r321_v20060721.jar.so)
+   at org.eclipse.jface.text.DocumentCommand$Command.execute(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.DocumentCommand.execute(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer.handleVerifyEvent(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.source.projection.ProjectionViewer.handleVerifyEvent(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$TextVerifyListener.verifyText(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.TypedListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.modifyContent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.doDelete(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.invokeAction(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.jface.text.source.projection.ProjectionViewer.doOperation(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jdt.internal.ui.javaeditor.JavaSourceViewer.doOperation(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.ui.texteditor.TextOperationAction$1.run(org.eclipse.ui.workbench.texteditor_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.swt.custom.BusyIndicator.showWhile(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.texteditor.TextOperationAction.run(org.eclipse.ui.workbench.texteditor_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.action.Action.runWithEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.ui.commands.ActionHandler.execute(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.handlers.LegacyHandlerWrapper.execute(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.core.commands.Command.executeWithChecks(org.eclipse.core.commands_3.2.0.I20060605-1400.jar.so)
+   at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(org.eclipse.core.commands_3.2.0.I20060605-1400.jar.so)
+   at org.eclipse.ui.internal.handlers.HandlerService.executeCommand(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.keys.WorkbenchKeyboard.executeCommand(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.keys.WorkbenchKeyboard.press(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.keys.WorkbenchKeyboard.processKeyEvent(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.keys.OutOfOrderListener.handleEvent(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.core.resources 4 2 2009-05-24 02:51:22.019
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+   at org.openoffice.ide.eclipse.core.ResourceChangesHandler.resourceChanged(Unknown Source)
+   at org.eclipse.core.internal.events.NotificationManager$1.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.runtime.SafeRunner.run(org.eclipse.equinox.common_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.notify(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.endOperation(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.jdt.core.JavaCore.run(org.eclipse.jdt.core_3.2.3.v_686_R32x.jar.so)
+   at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-24 03:00:07.203
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-24 03:00:07.203
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.core.resources 4 2 2009-05-24 03:01:48.741
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+   at org.openoffice.ide.eclipse.core.ResourceChangesHandler.resourceChanged(Unknown Source)
+   at org.eclipse.core.internal.events.NotificationManager$1.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.runtime.SafeRunner.run(org.eclipse.equinox.common_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.notify(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.endOperation(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.doBuild(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.jobs.Worker.run(org.eclipse.core.jobs_3.2.0.v20060603.jar.so)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-24 03:16:55.364
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-24 03:16:55.364
+!MESSAGE -1
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.access$15(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$MySelectionListener.selectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$4.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.Display.timerProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.core.resources 4 2 2009-05-24 03:50:46.840
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+   at org.openoffice.ide.eclipse.core.ResourceChangesHandler.resourceChanged(Unknown Source)
+   at org.eclipse.core.internal.events.NotificationManager$1.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.runtime.SafeRunner.run(org.eclipse.equinox.common_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.notify(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.endOperation(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.doBuild(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.jobs.Worker.run(org.eclipse.core.jobs_3.2.0.v20060603.jar.so)
+
+!ENTRY org.eclipse.core.resources 4 2 2009-05-24 03:50:58.229
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+   at org.openoffice.ide.eclipse.core.ResourceChangesHandler.resourceChanged(Unknown Source)
+   at org.eclipse.core.internal.events.NotificationManager$1.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.runtime.SafeRunner.run(org.eclipse.equinox.common_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.notify(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.endOperation(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.doBuild(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.jobs.Worker.run(org.eclipse.core.jobs_3.2.0.v20060603.jar.so)
+
+!ENTRY org.eclipse.core.resources 4 2 2009-05-24 03:53:16.417
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+   at org.openoffice.ide.eclipse.core.ResourceChangesHandler.resourceChanged(Unknown Source)
+   at org.eclipse.core.internal.events.NotificationManager$1.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.runtime.SafeRunner.run(org.eclipse.equinox.common_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.notify(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.endOperation(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.doBuild(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.jobs.Worker.run(org.eclipse.core.jobs_3.2.0.v20060603.jar.so)
+
+!ENTRY org.eclipse.core.resources 4 2 2009-05-24 04:36:07.857
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+   at org.openoffice.ide.eclipse.core.ResourceChangesHandler.resourceChanged(Unknown Source)
+   at org.eclipse.core.internal.events.NotificationManager$1.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.runtime.SafeRunner.run(org.eclipse.equinox.common_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.notify(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.endOperation(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.doBuild(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.jobs.Worker.run(org.eclipse.core.jobs_3.2.0.v20060603.jar.so)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-24 04:53:50.896
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-24 04:53:50.896
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.core.resources 4 2 2009-05-24 05:58:12.884
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+   at org.openoffice.ide.eclipse.core.ResourceChangesHandler.resourceChanged(Unknown Source)
+   at org.eclipse.core.internal.events.NotificationManager$1.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.runtime.SafeRunner.run(org.eclipse.equinox.common_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.notify(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.endOperation(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.doBuild(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.AutoBuildJob.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.jobs.Worker.run(org.eclipse.core.jobs_3.2.0.v20060603.jar.so)
+
+!ENTRY org.eclipse.core.resources 4 2 2009-05-24 16:44:48.854
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+   at org.openoffice.ide.eclipse.core.ResourceChangesHandler.resourceChanged(Unknown Source)
+   at org.eclipse.core.internal.events.NotificationManager$1.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.runtime.SafeRunner.run(org.eclipse.equinox.common_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.notify(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.endOperation(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.core.internal.resources.Workspace.run(org.eclipse.core.resources_3.2.2.R32x_v20061218.jar.so)
+   at org.eclipse.jdt.core.JavaCore.run(org.eclipse.jdt.core_3.2.3.v_686_R32x.jar.so)
+   at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2009-05-24 16:45:41.405
+!MESSAGE Internal Error
+!STACK 1
+org.eclipse.core.runtime.CoreException: Plug-in "org.openoffice.ide.eclipse.java" was unable to instantiate class "org.openoffice.ide.eclipse.java.build.OOoContainerPage".
+   at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.jdt.internal.ui.util.CoreUtility.createExtension(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathContainerDescriptor.createPage(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathContainerWizard.getContainerPage(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathContainerWizard.getNextPage(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jface.wizard.WizardPage.getNextPage(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.wizard.WizardDialog.nextPressed(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.wizard.WizardDialog.buttonPressed(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.dialogs.Dialog$3.widgetSelected(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.swt.widgets.TypedListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runDeferredEvents(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.jface.window.Window.runEventLoop(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.window.Window.open(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddLibraryToBuildpathAction.run(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jface.action.Action.runWithEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.access$2(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runDeferredEvents(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+org.eclipse.core.runtime.CoreException[1]: java.util.NoSuchElementException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at org.openoffice.ide.eclipse.core.model.OOoContainer.getSomeOOo(Unknown Source)
+   at org.openoffice.ide.eclipse.java.build.OOoContainerPage.getDefaultEntry(Unknown Source)
+   at org.openoffice.ide.eclipse.java.build.OOoContainerPage.<init>(Unknown Source)
+   at java.lang.Class.newInstance(libgcj.so.90)
+   at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.jdt.internal.ui.util.CoreUtility.createExtension(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathContainerDescriptor.createPage(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathContainerWizard.getContainerPage(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathContainerWizard.getNextPage(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jface.wizard.WizardPage.getNextPage(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.wizard.WizardDialog.nextPressed(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.wizard.WizardDialog.buttonPressed(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.dialogs.Dialog$3.widgetSelected(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.swt.widgets.TypedListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runDeferredEvents(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.jface.window.Window.runEventLoop(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.window.Window.open(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddLibraryToBuildpathAction.run(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jface.action.Action.runWithEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.access$2(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runDeferredEvents(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+!SUBENTRY 1 org.eclipse.equinox.registry 4 1 2009-05-24 16:45:41.469
+!MESSAGE Plug-in "org.openoffice.ide.eclipse.java" was unable to instantiate class "org.openoffice.ide.eclipse.java.build.OOoContainerPage".
+!STACK 0
+java.util.NoSuchElementException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at org.openoffice.ide.eclipse.core.model.OOoContainer.getSomeOOo(Unknown Source)
+   at org.openoffice.ide.eclipse.java.build.OOoContainerPage.getDefaultEntry(Unknown Source)
+   at org.openoffice.ide.eclipse.java.build.OOoContainerPage.<init>(Unknown Source)
+   at java.lang.Class.newInstance(libgcj.so.90)
+   at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(org.eclipse.equinox.registry_3.2.1.R32x_v20060814.jar.so)
+   at org.eclipse.jdt.internal.ui.util.CoreUtility.createExtension(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathContainerDescriptor.createPage(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathContainerWizard.getContainerPage(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.ClasspathContainerWizard.getNextPage(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jface.wizard.WizardPage.getNextPage(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.wizard.WizardDialog.nextPressed(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.wizard.WizardDialog.buttonPressed(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.dialogs.Dialog$3.widgetSelected(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.swt.widgets.TypedListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runDeferredEvents(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.jface.window.Window.runEventLoop(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.window.Window.open(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jdt.internal.ui.wizards.buildpaths.newsourcepage.AddLibraryToBuildpathAction.run(org.eclipse.jdt.ui_3.2.2.r322_v20070124.jar.so)
+   at org.eclipse.jface.action.Action.runWithEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.access$2(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runDeferredEvents(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+!SESSION 2009-05-24 17:11:17.770 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.fullversion=GNU libgcj 4.3.3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-24 17:11:23.868
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-24 17:11:23.868
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-24 17:11:23.868
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-24 17:11:23.869
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-24 17:11:47.738
+!MESSAGE OOEclipseIntegration started
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-24 17:11:51.860
+!MESSAGE Java UNO resources changes are now listened
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-24 17:11:51.870
+!MESSAGE Resources changes are now listened
+
+!ENTRY org.eclipse.ui 4 4 2009-05-24 17:53:17.670
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-24 17:53:17.670
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.help.base 4 4 2009-05-24 18:21:20.526
+!MESSAGE Help documentation could not be indexed completely.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2009-05-24 18:21:20.526
+!MESSAGE Help document /org.openoffice.ide.eclipse.core/doc/help/html/api/org/openoffice/ide/eclipse/preferences/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2009-05-24 18:21:20.526
+!MESSAGE Help document /org.openoffice.ide.eclipse.core/doc/help/html/api/org/openoffice/ide/eclipse/gui/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2009-05-24 18:21:20.526
+!MESSAGE Help document /org.openoffice.ide.eclipse.core/doc/help/html/api/org/openoffice/ide/eclipse/unotypebrowser/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2009-05-24 18:21:20.526
+!MESSAGE Help document /org.openoffice.ide.eclipse.core/doc/help/html/api/org/openoffice/ide/eclipse/wizards/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2009-05-24 18:21:20.526
+!MESSAGE Help document /org.openoffice.ide.eclipse.core/doc/help/html/api/org/openoffice/ide/eclipse/i18n/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2009-05-24 18:21:20.526
+!MESSAGE Help document /org.openoffice.ide.eclipse.core/doc/help/html/api/org/openoffice/ide/eclipse/builders/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2009-05-24 18:21:20.526
+!MESSAGE Help document /org.openoffice.ide.eclipse.core/doc/help/html/api/org/openoffice/ide/eclipse/actions/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2009-05-24 18:21:20.526
+!MESSAGE Help document /org.openoffice.ide.eclipse.core/doc/help/html/api/org/openoffice/ide/eclipse/model/package-summary.html cannot be opened.
+!SUBENTRY 1 org.eclipse.help.base 4 4 2009-05-24 18:21:20.527
+!MESSAGE Help document /org.openoffice.ide.eclipse.core/doc/help/html/api/org/openoffice/ide/eclipse/editors/package-summary.html cannot be opened.
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 01:34:20.691
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 01:34:20.692
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 01:34:30.841
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 01:34:30.841
+!MESSAGE Failed to execute runnable (java.util.ConcurrentModificationException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.util.ConcurrentModificationException)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 01:36:37.011
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 01:36:37.011
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 01:37:11.598
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 01:37:11.598
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 01:37:38.499
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 01:37:38.499
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 01:39:36.789
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 01:39:36.789
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 01:39:44.854
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 01:39:44.854
+!MESSAGE -1
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.access$15(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$MySelectionListener.selectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$4.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.Display.timerProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 01:39:46.710
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 01:39:46.711
+!MESSAGE -1
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendIMKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_commit(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_im_context_filter_keypress(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_im_context_filter_keypress(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.filterKey(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 03:58:13.667
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 03:58:13.668
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 03:58:34.512
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 03:58:34.512
+!MESSAGE Failed to execute runnable (java.util.ConcurrentModificationException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.util.ConcurrentModificationException)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 04:00:56.781
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 04:00:56.781
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 04:01:07.590
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 04:01:07.591
+!MESSAGE -1
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.access$15(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$MySelectionListener.selectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$4.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.Display.timerProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 04:01:16.261
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 04:01:16.261
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 04:21:43.970
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 04:21:43.970
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 04:21:50.362
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 04:21:50.362
+!MESSAGE -1
+!STACK 0
+java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.access$15(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$MySelectionListener.selectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer.firePostSelectionChanged(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$4.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.Display.timerProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 04:21:55.547
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 04:21:55.547
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+!SESSION 2009-05-25 12:18:47.218 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.fullversion=GNU libgcj 4.3.3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-25 12:18:54.684
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-25 12:18:54.684
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-25 12:18:54.685
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-25 12:18:54.685
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-25 12:19:27.569
+!MESSAGE OOEclipseIntegration started
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-25 12:19:33.610
+!MESSAGE Java UNO resources changes are now listened
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-25 12:19:33.639
+!MESSAGE Resources changes are now listened
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 13:14:17.427
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 13:14:17.428
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 19:47:57.402
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 19:47:57.402
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-25 20:06:35.662
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-25 20:06:35.662
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more

@@ -1,0 +1,7 @@
+package ejava;
+
+public class OOoCompiler extends FileCompiler {
+	public Scanner make_scanner ( String source ) {
+		
+	}
+}

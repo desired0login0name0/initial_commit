@@ -1,0 +1,10 @@
+package oooms;
+
+public class TrimScanner {
+	public TrimScanner ( String source ) {
+		// to_do
+	}
+	public void scan () {
+		// fix_me
+	}
+}

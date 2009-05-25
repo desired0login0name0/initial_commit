@@ -1,0 +1,7 @@
+package oooms;
+
+public class OOoMSException extends RuntimeException {
+	public OOoMSException ( Throwable cause ) {
+		super ( cause );
+	}
+}

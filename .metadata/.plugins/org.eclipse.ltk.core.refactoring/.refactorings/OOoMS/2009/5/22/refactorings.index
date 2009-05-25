@@ -1,0 +1,10 @@
+1243175332101	Rename type 'OOoMS'
+1243286187318	Convert local variable 'xComponentContext' to field
+1243282156591	Convert local variable 'xMultiComponentFactory' to field
+1243281112355	Rename local variable 'o'
+1243280868429	Rename local variable 'o'
+1243219734597	Rename local variable 'xComponentLoader'
+1243217599817	Change method 'convert'
+1243209399085	Rename local variable 'xMCF'
+1243193097371	Rename type 'OOoMSThrowable'
+1243180863749	Rename type 'OOoMSException'

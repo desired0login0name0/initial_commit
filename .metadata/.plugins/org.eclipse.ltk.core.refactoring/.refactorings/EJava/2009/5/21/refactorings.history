@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<session version="1.0">
+  <refactoring id="org.eclipse.jdt.ui.rename.type" stamp="1243109825379" flags="589830" description="Rename type &apos;StreamEJava&apos;" comment="Rename type &apos;ejava.StreamEJava&apos; to &apos;FileEJava&apos;&#10;- Original element: &apos;ejava.StreamEJava&apos;&#10;- Renamed element: &apos;ejava.FileEJava&apos;&#10;- Update references to refactored element&#10;- Rename similarly named elements&#10;- Update fully qualified names in non-Java files&#10;- Update textual occurrences in comments and strings" version="1.0" similarDeclarations="true" matchStrategy="1" qualified="true" references="true" textual="true" name="FileEJava" input="/src&lt;ejava{StreamEJava.java[StreamEJava"/>
+</session>

@@ -1,0 +1,13 @@
+package ejava;
+
+import core.Binding;
+
+public class FileEJava extends EJavaBase {
+	public FileEJava ( String filename ) {
+		this.filename = filename;
+	}
+	public Object result ( Binding b ) {
+		// fix_me
+		return null;
+	}
+}

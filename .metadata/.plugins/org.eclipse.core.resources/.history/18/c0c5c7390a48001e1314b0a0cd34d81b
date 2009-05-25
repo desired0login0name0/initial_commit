@@ -1,0 +1,5 @@
+package ejava;
+
+public interface Compiler {
+	< T > T compile ( String s );
+}

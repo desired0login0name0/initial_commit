@@ -1,0 +1,13 @@
+package ejava;
+
+public abstract class EJavaBase implements EJava {
+	static final String Revision =
+		"$ date_: 2_009_-_05_-_23 18_:_43_:_07 +_0_900 $";
+	static String version () {
+		return String.format ( "EJava.java [ 0.0.1 % ]", Revision.split ( " " ) [ 2 ] );
+	}
+	public EJavaBase ( String string ) {
+		this ( string, null, null, "_ejavaout" );
+	}
+	public EJavaBase ( String string, )
+}

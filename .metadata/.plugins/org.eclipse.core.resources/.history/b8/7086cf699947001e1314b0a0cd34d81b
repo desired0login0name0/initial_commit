@@ -1,0 +1,5 @@
+package ejava;
+
+public abstract class EJavaBase implements EJava {
+
+}

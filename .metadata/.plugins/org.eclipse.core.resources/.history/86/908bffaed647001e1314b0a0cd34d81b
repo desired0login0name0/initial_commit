@@ -1,0 +1,10 @@
+package ejava;
+
+import core.Binding;
+
+public class StreamEJava extends EJavaBase {
+	public Object result ( Binding b ) {
+		// fix_me
+		return null;
+	}
+}

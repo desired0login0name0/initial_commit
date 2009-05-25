@@ -1,0 +1,7 @@
+package oooms;
+
+public class DocumentConverter {
+	public void convert () {
+		// fix_me
+	}
+}

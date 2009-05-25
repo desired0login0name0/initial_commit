@@ -1,0 +1,8 @@
+package ejava;
+
+import java.io.File;
+
+public class OOoCompiler extends FileCompiler {
+	public File compile ( String s ) {
+	}
+}

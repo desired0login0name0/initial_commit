@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<session version="1.0">
+  
+  
+  
+  
+  <refactoring id="org.eclipse.jdt.ui.change.method.signature" stamp="1243132692090" flags="589830" description="Change method &apos;make_scanner&apos;" comment="Change method &apos;public static Scanner ejava.Compiler.make_scanner(String source)&apos; to &apos;protected static Scanner make_scanner(String source)&apos;&#10;- New visibility: &apos;protected&apos;" delegate="false" version="1.0" deprecate="true" visibility="4" parameter1="String source 0 String source false" name="make_scanner" input="/src&lt;ejava{Compiler.java[Compiler~make_scanner~QString;"/>
+  
+  
+
+  
+  <refactoring id="org.eclipse.jdt.ui.rename.field" stamp="1243175400437" flags="589826" description="Rename field &apos;oooms&apos;" comment="Rename field &apos;oooms&apos; in &apos;ejava.OOoScanner&apos; to &apos;trim_scanner&apos;&#10;- Original element: &apos;ejava.OOoScanner.oooms&apos;&#10;- Renamed element: &apos;ejava.OOoScanner.trim_scanner&apos;&#10;- Update references to refactored element&#10;- Update textual occurrences in comments and strings" deprecate="true" textual="true" name="trim_scanner" input="/src&lt;ejava{OOoScanner.java[OOoScanner^oooms" version="1.0" references="true" getter="false" delegate="false" setter="false"/>
+  
+
+  <refactoring id="org.eclipse.jdt.ui.rename.field" stamp="1243176093574" flags="589826" description="Rename field &apos;trim_scanner&apos;" comment="Rename field &apos;trim_scanner&apos; in &apos;ejava.OOoScanner&apos; to &apos;trimScanner&apos;&#10;- Original element: &apos;ejava.OOoScanner.trim_scanner&apos;&#10;- Renamed element: &apos;ejava.OOoScanner.trimScanner&apos;&#10;- Update references to refactored element&#10;- Update textual occurrences in comments and strings" deprecate="true" textual="true" name="trimScanner" input="/src&lt;ejava{OOoScanner.java[OOoScanner^trim_scanner" version="1.0" references="true" getter="false" delegate="false" setter="false"/>
+</session>

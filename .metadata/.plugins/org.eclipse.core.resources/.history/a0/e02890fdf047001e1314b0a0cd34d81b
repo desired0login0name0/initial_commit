@@ -1,0 +1,5 @@
+package ejava;
+
+public abstract class Compiler < T, U > {
+	public abstract T compile ( U u );
+}

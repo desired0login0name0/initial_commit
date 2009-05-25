@@ -1,0 +1,4 @@
+package ejava;
+
+public abstract class Compiler {
+}

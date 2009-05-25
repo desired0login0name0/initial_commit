@@ -1,0 +1,27 @@
+package ejava;
+
+import core.Binding;
+import core.TopLevel;
+
+public abstract class EJavaBase implements EJava {
+	public EJavaBase ( String s ) {
+		this ( s, null, null, "_ejavaout" );
+	}
+	public EJavaBase (
+		String s, Byte safe_level, String trim_mode, String eoutvariable ) {
+		// fix_me
+	}
+	public void run () {
+		run ( TopLevel.Binding );
+	}
+	public void run ( Binding b ) {
+		System.out.print ( result ( b ) );
+	}
+	public Object result () {
+		return result ( TopLevel.Binding );
+	}
+	public Object result ( Binding b ) {
+		// fix_me
+		return new Object ();
+	}
+}

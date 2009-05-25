@@ -1,0 +1,20 @@
+package oooms;
+
+import com.sun.star.beans.PropertyValue;
+import com.sun.star.frame.XComponentLoader;
+import com.sun.star.frame.XStorable;
+import com.sun.star.uno.UnoRuntime;
+
+public class DocumentConverter {
+	private XComponentLoader document;
+	public DocumentConverter ( XComponentLoader document ) {
+		this.document = document;
+	}
+	public void convert ( String loadURL ) {
+		PropertyValue [] propertyValue;
+		Object o = document.loadComponentFromURL (
+			loadURL.toString (), "_blank", 0, propertyValue );
+		XStorable xStorable = ( XStorable )
+			UnoRuntime.queryInterface ( XStorable.class, o );
+	}
+}

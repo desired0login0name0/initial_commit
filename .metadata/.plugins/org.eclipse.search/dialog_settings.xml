@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="DialogBounds_ReplaceDialog2">
+		<item key="DIALOG_X_ORIGIN" value="619"/>
+		<item key="DIALOG_HEIGHT" value="271"/>
+		<item key="DIALOG_WIDTH" value="452"/>
+		<item key="DIALOG_Y_ORIGIN" value="322"/>
+		<item key="DIALOG_FONT_NAME" value="1|Sans|10|0|GTK|1|"/>
+	</section>
+	<section name="DialogBounds_SearchDialog">
+		<item key="DIALOG_X_ORIGIN" value="578"/>
+		<item key="DIALOG_HEIGHT" value="461"/>
+		<item key="DIALOG_WIDTH" value="611"/>
+		<item key="DIALOG_Y_ORIGIN" value="196"/>
+		<item key="DIALOG_FONT_NAME" value="1|Sans|10|0|GTK|1|"/>
+	</section>
+	<section name="org.eclipse.search.text.FileSearchResultPage">
+	</section>
+	<section name="TextSearchPage">
+		<item key="CASE_SENSITIVE" value="false"/>
+		<item key="HISTORY_SIZE" value="4"/>
+		<item key="SEARCH_DERIVED" value="false"/>
+		<item key="REG_EX_SEARCH" value="false"/>
+		<section name="HISTORY0">
+			<item key="textPattern" value="todo"/>
+			<item key="ignoreCase" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="isRegExSearch" value="false"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.java"/>
+			</list>
+		</section>
+		<section name="HISTORY1">
+			<item key="textPattern" value="to_do"/>
+			<item key="ignoreCase" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="isRegExSearch" value="false"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.java"/>
+			</list>
+		</section>
+		<section name="HISTORY2">
+			<item key="textPattern" value="fix_me"/>
+			<item key="ignoreCase" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="isRegExSearch" value="false"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.java"/>
+			</list>
+		</section>
+		<section name="HISTORY3">
+			<item key="textPattern" value=""/>
+			<item key="ignoreCase" value="false"/>
+			<item key="scope" value="0"/>
+			<item key="isRegExSearch" value="false"/>
+			<list key="workingSets">
+			</list>
+			<list key="fileNamePatterns">
+				<item value="*.java"/>
+			</list>
+		</section>
+	</section>
+	<section name="Search">
+		<list key="Search.processedPageIds">
+			<item value="org.eclipse.search.internal.ui.text.TextSearchPage"/>
+			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
+			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
+		</list>
+		<list key="Search.enabledPageIds">
+			<item value="org.eclipse.search.internal.ui.text.TextSearchPage"/>
+			<item value="org.eclipse.jdt.ui.JavaSearchPage"/>
+			<item value="org.eclipse.pde.internal.ui.search.SearchPage"/>
+		</list>
+	</section>
+	<section name="ReplaceDialog2">
+		<list key="replace_with">
+			<item value="to_do"/>
+			<item value="fix_me"/>
+			<item value="todo"/>
+			<item value=""/>
+		</list>
+	</section>
+	<section name="SearchDialog.ScopePart">
+		<item key="scope" value="0"/>
+	</section>
+</section>

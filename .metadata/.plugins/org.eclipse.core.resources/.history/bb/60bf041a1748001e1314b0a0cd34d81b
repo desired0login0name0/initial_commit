@@ -1,0 +1,11 @@
+package ejava;
+
+public class Buffer < T > {
+	private T script;
+	public Buffer ( Compiler compiler ) {
+		// fix_me
+	}
+	public T getScript () {
+		return script;
+	}
+}

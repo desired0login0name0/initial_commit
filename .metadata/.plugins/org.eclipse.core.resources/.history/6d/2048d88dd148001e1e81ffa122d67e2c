@@ -1,0 +1,43 @@
+package oooms;
+
+import com.sun.star.comp.helper.Bootstrap;
+import com.sun.star.comp.helper.BootstrapException;
+import com.sun.star.frame.XComponentLoader;
+import com.sun.star.lang.XMultiComponentFactory;
+import com.sun.star.uno.Exception;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+
+import ejava.Scanner;
+
+public class TrimScanner implements Scanner {
+	public TrimScanner ( String source ) {
+		comment ( "getting a remote office component context" );
+		XComponentContext xComponentContext;
+		try {
+			xComponentContext = Bootstrap.bootstrap ();
+		} catch ( BootstrapException exception ) {
+			throw new OOoMSException ( exception );
+		}
+		comment ( "getting the remote office service manager" );
+		XMultiComponentFactory xMultiComponentFactory =
+			xComponentContext.getServiceManager ();
+		comment ( "creating the service of desktop" );
+		Object o;
+		try {
+			o = xMultiComponentFactory.createInstanceWithContext (
+				"com.sun.star.frame.Desktop", xComponentContext );
+		} catch ( Exception exception ) {
+			throw new OOoMSException ( exception );
+		}
+		comment ( "querying for the interface xcomponentloader on the desktop" );
+		XComponentLoader xComponentLoader = ( XComponentLoader )
+			UnoRuntime.queryInterface ( XComponentLoader.class, o );
+	}
+	public void scan () {
+		// fix_me
+	}
+	private void comment ( String s ) {
+		System.out.println ( s );
+	}
+}

@@ -1,0 +1,7 @@
+package oooms;
+
+public class OOoMSThrowable extends Throwable {
+	public OOoMSThrowable ( Throwable cause ) {
+		super ( cause );
+	}
+}

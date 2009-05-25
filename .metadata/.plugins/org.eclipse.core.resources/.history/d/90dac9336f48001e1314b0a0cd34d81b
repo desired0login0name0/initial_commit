@@ -1,0 +1,10 @@
+package oooms;
+
+public class OOoMS {
+	public OOoMS ( String source ) {
+		// to_do
+	}
+	public void scan () {
+		// fix_me
+	}
+}

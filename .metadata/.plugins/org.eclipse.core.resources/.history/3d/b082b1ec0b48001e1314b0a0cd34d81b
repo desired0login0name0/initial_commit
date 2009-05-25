@@ -1,0 +1,11 @@
+package ejava;
+
+public abstract class Compiler {
+	public < T > T compile ( String s ) {
+		Buffer < T > out = new Buffer < T > ( this );
+		Scanner scanner = make_scanner ( s );
+		scanner.scan ();
+		return out.getScript ();
+	}
+	public static Scanner make_scanner ( String source );
+}

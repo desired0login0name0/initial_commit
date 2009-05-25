@@ -1,0 +1,10 @@
+package ejava;
+
+public class Scanner {
+	public static Scanner make_scanner ( String source ) {
+		
+	}
+	public void scan () {
+		// to_do
+	}
+}

@@ -1,0 +1,39 @@
+package oooms;
+
+import com.sun.star.beans.PropertyValue;
+import com.sun.star.frame.XComponentLoader;
+import com.sun.star.frame.XStorable;
+import com.sun.star.io.IOException;
+import com.sun.star.lang.IllegalArgumentException;
+import com.sun.star.uno.UnoRuntime;
+
+public class DocumentConverter {
+	private XComponentLoader document;
+	public DocumentConverter ( XComponentLoader document ) {
+		this.document = document;
+	}
+	public void convert ( String loadURL ) {
+		comment ( "converting a document" );
+		Object o;
+		try {
+			o = document.loadComponentFromURL (
+				loadURL.toString (), "_blank", 0, null );
+		} catch ( IOException exception ) {
+			throw new OOoMSException ( exception );
+		} catch ( IllegalArgumentException exception ) {
+			throw new OOoMSException ( exception );
+		}
+		XStorable xStorable = ( XStorable )
+			UnoRuntime.queryInterface ( XStorable.class, o );
+		PropertyValue [] propertyValue = new PropertyValue [ 2 ];
+		propertyValue [ 0 ] = new PropertyValue ();
+		propertyValue [ 0 ].Name = "Overwrite";
+		propertyValue [ 0 ].Value = new Boolean ( true );
+		propertyValue [ 1 ] = new PropertyValue ();
+		propertyValue[ 1 ].Name = "FilterName";
+		propertyValue[ 1 ].Value = new Boolean ( true );
+	}
+	private void comment ( String s ) {
+		new Comment ().log ( s );	// to_do
+	}
+}

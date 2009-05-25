@@ -1,0 +1,12 @@
+package ejava;
+
+public class Buffer < T > {
+	private T script;
+
+	public Buffer ( Compiler compiler ) {
+	}
+
+	public T getScript () {
+		return script;
+	}
+}

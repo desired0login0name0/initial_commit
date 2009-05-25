@@ -1,0 +1,12 @@
+package ejava;
+
+import java.io.File;
+
+public class FileCompiler extends Compiler {
+	public File compile ( String s ) {
+		Buffer out = new Buffer ( this );
+		Scanner scanner = make_scanner ( s );
+		scanner.scan ();
+		return out.getScript ();
+	}
+}

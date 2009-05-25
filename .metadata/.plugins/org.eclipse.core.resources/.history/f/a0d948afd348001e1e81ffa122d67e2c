@@ -1,0 +1,8 @@
+package oooms;
+
+public class OOoMS {
+	public void convert () {
+		DocumentConverter documentConverter =
+			new DocumentConverter ( xComponentLoader );
+	}
+}

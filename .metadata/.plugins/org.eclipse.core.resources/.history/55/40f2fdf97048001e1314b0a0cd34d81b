@@ -1,0 +1,13 @@
+package ejava;
+
+import oooms.TrimScanner;
+
+public class OOoScanner implements Scanner {
+	private TrimScanner trim_scanner;
+	public OOoScanner ( String source ) {
+		trim_scanner = new TrimScanner ( source );
+	}
+	public void scan () {
+		trim_scanner.scan ();
+	}
+}

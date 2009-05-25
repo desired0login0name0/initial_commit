@@ -1,0 +1,13 @@
+package ejava;
+
+import oooms.OOoMS;
+
+public class OOoScanner implements Scanner {
+	private OOoMS oooms;
+	public OOoScanner ( String source ) {
+		oooms = new OOoMS ( source );
+	}
+	public void scan () {
+		oooms.scan ();
+	}
+}

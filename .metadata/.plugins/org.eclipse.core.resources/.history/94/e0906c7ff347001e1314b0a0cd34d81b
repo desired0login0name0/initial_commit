@@ -1,0 +1,10 @@
+package ejava;
+
+import java.io.File;
+
+public class FileCompiler extends Compiler < File > {
+	public File compile ( String s ) {
+		// to_do
+		return null;
+	}
+}

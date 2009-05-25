@@ -1,0 +1,10 @@
+package ejava;
+
+public class OOoScanner implements Scanner {
+	public OOoScanner ( String source ) {
+		// fix_me
+	}
+	public void scan () {
+		// to_do
+	}
+}

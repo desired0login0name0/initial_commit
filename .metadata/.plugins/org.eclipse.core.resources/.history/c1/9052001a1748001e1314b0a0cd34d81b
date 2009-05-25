@@ -1,0 +1,17 @@
+package ejava;
+
+import core.Binding;
+
+public class StringEJava extends EJavaBase {
+	public StringEJava ( String s ) {
+		this ( s, null, null, "_ejavaout" );
+	}
+	public StringEJava (
+		String s, Byte safe_level, String trim_mode, String eoutvariable ) {
+		// fix_me
+	}
+	public Object result ( Binding b ) {
+		// to_do
+		return null;
+	}
+}

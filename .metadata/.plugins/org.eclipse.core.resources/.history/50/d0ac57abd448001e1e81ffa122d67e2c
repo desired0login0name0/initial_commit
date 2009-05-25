@@ -1,0 +1,10 @@
+package oooms;
+
+import com.sun.star.frame.XComponentLoader;
+
+public class OOoMS {
+	public static void convert (XComponentLoader xComponentLoader) {
+		DocumentConverter documentConverter =
+			new DocumentConverter ( xComponentLoader );
+	}
+}
