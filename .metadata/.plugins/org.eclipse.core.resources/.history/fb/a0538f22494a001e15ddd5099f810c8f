@@ -1,0 +1,6 @@
+package oooms;
+
+public class Template {
+	public static void template () {
+	}
+}

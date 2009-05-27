@@ -1,0 +1,13 @@
+package oooms;
+
+import connection.BootstrapConnection;
+import ejava.Scanner;
+
+public class TrimScanner implements Scanner {
+	public TrimScanner ( String source ) {
+		new BootstrapConnection ().use ();
+	}
+	public void scan () {
+		// fix_me
+	}
+}

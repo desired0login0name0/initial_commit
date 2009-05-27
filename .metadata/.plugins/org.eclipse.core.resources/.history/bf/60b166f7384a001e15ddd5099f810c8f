@@ -1,0 +1,45 @@
+package connection;
+
+import oooms.OOoMSException;
+
+import com.sun.star.comp.helper.Bootstrap;
+import com.sun.star.comp.helper.BootstrapException;
+import com.sun.star.frame.XComponentLoader;
+import com.sun.star.lang.XMultiComponentFactory;
+import com.sun.star.uno.Exception;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+
+public class BootstrapConnection extends Connection {
+	public XComponentLoader xComponentLoader;
+	public void use () {
+		comment ( "getting the remote office service manager" );
+		XMultiComponentFactory xMultiComponentFactory = getRemoteServiceManager ( xComponentContext );
+		comment ( "remote servicemanager is "
+			+ xMultiComponentFactory != null ? "available" : "not available" );
+		comment ( "creating the service of desktop" );
+		Object desktop;
+		try {
+			desktop = xMultiComponentFactory.createInstanceWithContext (
+				"com.sun.star.frame.Desktop", xComponentContext );
+		} catch ( Exception exception ) {
+			throw new OOoMSException ( exception );
+		}
+		comment ( "querying for the interface xcomponentloader on the desktop" );
+		xComponentLoader = ( XComponentLoader )
+			UnoRuntime.queryInterface ( XComponentLoader.class, desktop );
+	}
+	protected XMultiComponentFactory getRemoteServiceManager ( XComponentContext xComponentContext ) {
+		comment ( "getting a remote office component context" );
+		XComponentContext xComponentContext;
+		try {
+			xComponentContext = Bootstrap.bootstrap ();
+			comment ( "connected to a running office" );
+		} catch ( BootstrapException exception ) {
+			throw new OOoMSException ( exception );
+		}
+		XMultiComponentFactory xMultiComponentFactory =
+			xComponentContext.getServiceManager ();
+		return xMultiComponentFactory;
+	}
+}

@@ -1,0 +1,8 @@
+package oooms;
+
+public abstract class Connection {
+	public abstract void use ();
+	private void comment ( String s ) {
+		new Comment ().log ( s );	// to_do
+	}
+}

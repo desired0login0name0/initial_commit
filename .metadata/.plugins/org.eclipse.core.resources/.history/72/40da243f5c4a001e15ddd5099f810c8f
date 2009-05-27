@@ -1,0 +1,23 @@
+package oooms;
+
+import com.sun.star.text.XTextFieldsSupplier;
+import com.sun.star.uno.UnoRuntime;
+
+import connection.Connection;
+import connection.UNOURLResolverConnection;
+import ejava.Scanner;
+
+public class TrimScanner implements Scanner {
+	public TrimScanner ( String source ) {
+		Connection connection = new UNOURLResolverConnection (
+			UNOURLResolverConnection.defaultUNOURL );
+		connection.use ();
+	}
+	public void scan () {
+		comment ( "simulated a rowset with columns" );
+		XTextFieldsSupplier xTextFieldsSupplier = UnoRuntime.queryInterface ( XTextFieldsSupplier.class, arg1 );
+	}
+	protected void comment ( String s ) {
+		new Comment ().log ( s );	// to_do
+	}
+}

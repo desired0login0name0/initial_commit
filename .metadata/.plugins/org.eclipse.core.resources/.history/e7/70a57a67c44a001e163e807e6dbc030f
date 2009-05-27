@@ -1,0 +1,50 @@
+package oooms;
+
+import com.sun.star.container.XEnumerationAccess;
+import com.sun.star.container.XNameAccess;
+import com.sun.star.text.XTextFieldsSupplier;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.util.XRefreshable;
+
+import connection.Connection;
+import connection.UNOURLResolverConnection;
+import ejava.Scanner;
+import ejava.TokenVisitor;
+
+public class TrimScanner implements Scanner {
+	private XEnumerationAccess xEnumeratedTextFields;
+	private XNameAccess xNamedTextFieldMasters;
+	private Connection connection;
+	public TrimScanner ( String source ) {
+		connection = new UNOURLResolverConnection (
+			UNOURLResolverConnection.defaultUNOURL );
+		connection.use ();
+	}
+	public void scan () {
+		comment ( "loaded template" );
+		comment ( "get xtextfieldssupplier interface from document component" );
+		XTextFieldsSupplier xTextFieldsSupplier = ( XTextFieldsSupplier )
+			UnoRuntime.queryInterface (
+				XTextFieldsSupplier.class, connection.getXComponentContext () );
+		comment ( "access the textfieldmasters collection" );
+		xNamedTextFieldMasters = xTextFieldsSupplier.getTextFieldMasters ();
+		comment ( "access the textfields collection" );
+		xEnumeratedTextFields = xTextFieldsSupplier.getTextFields ();
+	}
+	public void eachToken ( TokenVisitor v ) {
+		String [] elements = xNamedTextFieldMasters.getElementNames ();
+		for ( String e : elements ) {
+			comment ( "access corresponding field master" );
+			Object fieldMaster = xNamedTextFieldMasters.getByName ( e );
+			v.withToken ( fieldMaster );
+		}
+		comment ( "refresh the textfields collection" );
+		XRefreshable xRefreshable = ( XRefreshable )
+			UnoRuntime.queryInterface (
+				XRefreshable.class, xEnumeratedTextFields );
+		xRefreshable.refresh ();
+	}
+	protected void comment ( String s ) {
+		new Comment ().log ( s );	// to_do
+	}
+}

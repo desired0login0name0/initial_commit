@@ -1,0 +1,5 @@
+package ejava;
+
+interface TokenVisitor {
+
+}

@@ -1,0 +1,20 @@
+package oooms;
+
+import com.sun.star.comp.helper.Bootstrap;
+import com.sun.star.comp.helper.BootstrapException;
+
+public class Connection {
+	public void use () {
+		comment ( "getting a remote office component context" );
+		try {
+			xComponentContext = Bootstrap.bootstrap ();
+			comment ( "connected to a running office" );
+		} catch ( BootstrapException exception ) {
+			throw new OOoMSException ( exception );
+		}
+		comment ( "getting the remote office service manager" );
+		xMultiComponentFactory = xComponentContext.getServiceManager ();
+		comment ( "remote servicemanager is "
+			+ xMultiComponentFactory != null ? "available" : "not available" );
+	}
+}

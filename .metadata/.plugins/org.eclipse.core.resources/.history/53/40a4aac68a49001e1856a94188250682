@@ -1,0 +1,20 @@
+package oooms;
+
+import com.sun.star.comp.helper.Bootstrap;
+import com.sun.star.comp.helper.BootstrapException;
+import com.sun.star.frame.XComponentLoader;
+import com.sun.star.lang.XMultiComponentFactory;
+import com.sun.star.uno.Exception;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+
+import ejava.Scanner;
+
+public class TrimScanner implements Scanner {
+	public TrimScanner ( String source ) {
+		use ();
+	}
+	public void scan () {
+		// fix_me
+	}
+}

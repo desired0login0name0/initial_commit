@@ -1,0 +1,11 @@
+package connection;
+
+public class WithEventListenerConnection extends Connection {
+
+	@Override
+	public void use () {
+		// to_do Auto-generated method stub
+
+	}
+
+}

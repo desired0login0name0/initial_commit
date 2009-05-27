@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<session version="1.0">
+  <refactoring id="org.eclipse.jdt.ui.promote.temp" stamp="1243400679557" flags="2" description="Convert local variable &apos;compiler&apos; to field" comment="Convert local variable &apos;ejava.OOoEJava.OOoEJava().compiler&apos; in &apos;ejava.OOoEJava.OOoEJava()&apos; to field&#10;- Original element: &apos;ejava.OOoEJava.OOoEJava().compiler&apos;&#10;- Field name: &apos;compiler&apos;&#10;- Initialize field in method&#10;- Declared visibility: &apos;private&apos;" version="1.0" final="false" static="false" selection="387 8" visibility="2" name="compiler" input="/src&lt;ejava{OOoEJava.java" initialize="1"/>
+</session>

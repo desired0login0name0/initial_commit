@@ -1,0 +1,6 @@
+package oooms;
+
+public class Template {
+	protected static void template () {
+	}
+}

@@ -1,0 +1,5 @@
+package oooms;
+
+public class TrimVisitor {
+
+}

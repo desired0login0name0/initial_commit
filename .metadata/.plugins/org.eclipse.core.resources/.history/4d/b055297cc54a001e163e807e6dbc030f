@@ -1,0 +1,6 @@
+package oooms;
+
+public class OOoMS {
+	DocumentConverter documentConverter = new DocumentConverter ();
+	documentConverter.convert ( loadURL, filtername, saveURL );
+}

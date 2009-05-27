@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<session version="1.0">
+  
+  
+  <refactoring id="org.eclipse.jdt.ui.rename.package" stamp="1243377972202" flags="589830" description="Rename package &apos;example&apos;" comment="Rename package &apos;example&apos; to &apos;sample&apos;&#10;- Original element: &apos;Sample/src/example&apos;&#10;- Renamed element: &apos;Sample/src/sample&apos;&#10;- Update references to refactored element&#10;- Update fully qualified names in non-Java files&#10;- Update textual occurrences in comments and strings" textual="true" hierarchical="false" version="1.0" qualified="true" name="sample" input="/src&lt;example" references="true"/>
+  
+
+  <refactoring id="org.eclipse.jdt.ui.rename.type" stamp="1243378090809" flags="589830" description="Rename type &apos;Example&apos;" comment="Rename type &apos;sample.Example&apos; to &apos;Sample&apos;&#10;- Original element: &apos;sample.Example&apos;&#10;- Renamed element: &apos;sample.Sample&apos;&#10;- Update references to refactored element&#10;- Rename similarly named elements&#10;- Update fully qualified names in non-Java files&#10;- Update textual occurrences in comments and strings" version="1.0" similarDeclarations="true" matchStrategy="1" qualified="true" references="true" textual="true" name="Sample" input="/src&lt;sample{Example.java[Example"/>
+</session>

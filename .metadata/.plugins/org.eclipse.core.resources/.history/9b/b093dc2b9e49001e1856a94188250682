@@ -1,0 +1,43 @@
+package connection;
+
+import com.sun.star.bridge.XUnoUrlResolver;
+import com.sun.star.comp.helper.Bootstrap;
+import com.sun.star.lang.XMultiComponentFactory;
+import com.sun.star.uno.Exception;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+
+import oooms.OOoMSException;
+
+public class UNOURLResolver extends Connection {
+	private String unoURL;
+	public void use () {
+		XComponentContext xLocalComponentContext;
+		try {
+			xLocalComponentContext =
+				Bootstrap.createInitialComponentContext ( null );
+		} catch ( java.lang.Exception exception ) {
+			throw new OOoMSException ( exception );
+		}
+		comment ( "initial servicemanager" );
+		XMultiComponentFactory xLocalServiceManager =
+			xLocalComponentContext.getServiceManager ();
+		comment ( "create a url resolver" );
+		Object unoURLResolver;
+		try {
+			unoURLResolver = xLocalServiceManager.createInstanceWithContext (
+				"com.sun.star.bridge.UnoUrlResolver", xLocalComponentContext );
+		} catch ( Exception exception ) {
+			throw new OOoMSException ( exception );
+		}
+		comment ( "query for the xunourlresolver interface" );
+		XUnoUrlResolver xUNOURLResolver = ( XUnoUrlResolver )
+			UnoRuntime.queryInterface ( XUnoUrlResolver.class, unoURLResolver );
+		comment ( "import the object" );
+		Object initialObject = xUNOURLResolver.resolve ( unoURL );
+		comment ( "xcomponentcontext" );
+		comment ( initialObject != null
+			? "initial object successfully retrieved"
+			: "given initial object name unknown at the server side" );
+	}
+}

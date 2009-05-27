@@ -1,0 +1,38 @@
+package connection;
+
+import oooms.OOoMSException;
+
+import com.sun.star.bridge.XUnoUrlResolver;
+import com.sun.star.comp.helper.Bootstrap;
+import com.sun.star.comp.helper.BootstrapException;
+import com.sun.star.frame.XComponentLoader;
+import com.sun.star.lang.XMultiComponentFactory;
+import com.sun.star.uno.Exception;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+
+public class UNOURLResolver extends Connection {
+	String unoURL;
+
+	public void use () {
+		XComponentContext xLocalComponentContext =
+			Bootstrap.createInitialComponentContext ( null );
+		comment ( "initial servicemanager" );
+		XMultiComponentFactory xLocalServiceManager =
+			xLocalComponentContext.getServiceManager ();
+		comment ( "create a url resolver" );
+		Object unoURLResolver;
+		try {
+			unoURLResolver = xLocalServiceManager.createInstanceWithContext (
+				"com.sun.star.bridge.UnoUrlResolver", xLocalComponentContext );
+		} catch ( Exception exception ) {
+			throw new OOoMSException ( exception );
+		}
+		comment ( "query for the xunourlresolver interface" );
+		XUnoUrlResolver xUNOURLResolver = ( XUnoUrlResolver )
+			UnoRuntime.queryInterface ( XUnoUrlResolver.class, unoURLResolver );
+		comment ( "import the object" );
+		Object initialObject = xUNOURLResolver.resolve ( unoURL );
+	}
+
+}

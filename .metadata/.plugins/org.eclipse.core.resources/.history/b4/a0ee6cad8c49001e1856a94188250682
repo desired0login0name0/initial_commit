@@ -1,0 +1,17 @@
+package oooms;
+
+import com.sun.star.comp.helper.Bootstrap;
+import com.sun.star.comp.helper.BootstrapException;
+import com.sun.star.frame.XComponentLoader;
+import com.sun.star.lang.XMultiComponentFactory;
+import com.sun.star.uno.Exception;
+import com.sun.star.uno.UnoRuntime;
+import com.sun.star.uno.XComponentContext;
+
+public class Connection {
+	public abstract void use ();
+	private void comment ( String s ) {
+		new Comment ().log ( s );	// to_do
+	}
+
+}

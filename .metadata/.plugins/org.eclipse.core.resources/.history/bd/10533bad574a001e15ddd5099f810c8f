@@ -1,0 +1,12 @@
+package oooms;
+
+import java.util.Map;
+
+public class Template {
+	protected void template ( Map < String, String > recipient ) {
+		comment ( "simulate a rowset with columns" );
+	}
+	protected void comment ( String s ) {
+		new Comment ().log ( s );	// to_do
+	}
+}

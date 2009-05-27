@@ -1,0 +1,13 @@
+package oooms;
+
+import connection.UNOURLResolverConnection;
+import ejava.Scanner;
+
+public class TrimScanner implements Scanner {
+	public TrimScanner ( String source ) {
+		new UNOURLResolverConnection ().use ();
+	}
+	public void scan () {
+		// fix_me
+	}
+}
