@@ -1,3 +1,5 @@
 1243132692090	Change method 'make_scanner'
+1243425008067	Change method 'eachToken'
+1243424944652	Convert local variable 'scanner' to field
 1243176093574	Rename field 'trim_scanner'
 1243175400437	Rename field 'oooms'

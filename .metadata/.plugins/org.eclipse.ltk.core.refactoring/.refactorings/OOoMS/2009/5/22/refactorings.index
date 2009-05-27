@@ -1,4 +1,38 @@
 1243175332101	Rename type 'OOoMS'
+1243438109287	Rename local variable 'o'
+1243432716407	Rename local variable 'e'
+1243398684114	Convert local variable 'xEnumeratedTextFields' to field
+1243398638523	Convert local variable 'xNamedTextFieldMasters' to field
+1243387106905	Rename method 'getXLocalComponentContext'
+1243386415411	Convert local variable 'connection' to field
+1243378884080	Change method 'template'
+1243373136578	Convert local variable 'xLocalComponentContext' to field
+1243372919230	Change method 'getRemoteServiceManager'
+1243372670817	Extract method 'getRemoteServiceManager'
+1243372179107	Convert local variable 'xComponentContext' to field
+1243371612505	Change method 'getRemoteServiceManager'
+1243371550987	Extract method 'getRemoteServiceManager'
+1243368853512	Extract method 'close'
+1243362861356	Extract method 'newDocumentComponentFromTemplate'
+1243357804291	Rename local variable 'xDocumentComponent'
+1243357713354	Convert local variable 'xStorable' to field
+1243356792981	Rename local variable 'propertyValue'
+1243356560820	Extract method 'storeDocumentComponent'
+1243309348718	Rename local variable 'cause'
+1243305803719	Rename type 'UNOURLResolver'
+1243301943145	Rename local variable 'desktop'
+1243301302308	Rename local variable 'xMultiComponentFactory'
+1243300917735	Rename local variable 'xComponentContext'
+1243300455229	Rename local variable 'desktop'
+1243300268897	Rename local variable 'xMultiComponentFactory'
+1243299955809	Rename local variable 'xComponentContext'
+1243298623056	Change method 'log'
+1243297948835	Change method 'comment'
+1243297779183	Change method 'log'
+1243297266324	Extract superclass 'Connection'
+1243297095075	Convert local variable 'xComponentLoader' to field
+1243296834137	Rename type 'Connection'
+1243296161970	Change method 'useConnection'
 1243286187318	Convert local variable 'xComponentContext' to field
 1243282156591	Convert local variable 'xMultiComponentFactory' to field
 1243281112355	Rename local variable 'o'

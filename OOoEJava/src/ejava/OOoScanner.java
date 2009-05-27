@@ -10,4 +10,7 @@ public class OOoScanner implements Scanner {
 	public void scan () {
 		trimScanner.scan ();
 	}
+	public void eachToken ( TokenVisitor v ) {
+		trimScanner.eachTrim ( v );
+	}
 }

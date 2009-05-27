@@ -1967,3 +1967,335 @@ Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
    at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
    at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
    ...18 more
+
+!ENTRY org.eclipse.ui 4 4 2009-05-26 03:56:10.209
+!MESSAGE Abnormal Workbench Condition
+
+!ENTRY org.eclipse.ui 4 0 2009-05-26 03:56:10.209
+!MESSAGE While undoing the operation, an exception occurred
+!STACK 0
+org.eclipse.core.commands.ExecutionException: While undoing the operation, an exception occurred
+   at org.eclipse.core.commands.operations.DefaultOperationHistory.doUndo(org.eclipse.core.commands_3.2.0.I20060605-1400.jar.so)
+   at org.eclipse.core.commands.operations.DefaultOperationHistory.undo(org.eclipse.core.commands_3.2.0.I20060605-1400.jar.so)
+   at org.eclipse.ui.operations.UndoActionHandler.runCommand(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.operations.OperationHistoryActionHandler$1.run(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.jface.operation.ModalContext.runInCurrentThread(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.operation.ModalContext.run(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.access$6(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog$2.run(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.swt.custom.BusyIndicator.showWhile(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.operations.TimeTriggeredProgressMonitorDialog.run(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.operations.OperationHistoryActionHandler.run(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.jface.action.Action.runWithEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem.access$2(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(org.eclipse.jface_3.2.2.M20061214-1200.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runDeferredEvents(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$ExitListener.left(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeModel.exit(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeModel$DocumentListener.documentChanged(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged2(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.doFireDocumentChanged(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.fireDocumentChanged(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.jface.text.AbstractDocument.replace(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.core.internal.filebuffers.SynchronizableDocument.replace(org.eclipse.core.filebuffers_3.2.1.r321_v20060721.jar.so)
+   at org.eclipse.text.undo.DocumentUndoManager$UndoableTextChange.undoTextChange(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.text.undo.DocumentUndoManager$UndoableCompoundTextChange.undo(org.eclipse.text_3.2.0.v20060605-1400.jar.so)
+   at org.eclipse.core.commands.operations.DefaultOperationHistory.doUndo(org.eclipse.core.commands_3.2.0.I20060605-1400.jar.so)
+   ...34 more
+!SESSION 2009-05-26 14:26:35.826 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.fullversion=GNU libgcj 4.3.3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 14:26:43.327
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 14:26:43.327
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 14:26:43.328
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 14:26:43.328
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-26 14:27:14.993
+!MESSAGE OOEclipseIntegration started
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-26 14:27:21.199
+!MESSAGE Java UNO resources changes are now listened
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-26 14:27:21.525
+!MESSAGE Resources changes are now listened
+!SESSION 2009-05-26 14:42:43.286 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.fullversion=GNU libgcj 4.3.3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 14:42:47.233
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 14:42:47.233
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 14:42:47.233
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 14:42:47.233
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-26 14:42:58.358
+!MESSAGE OOEclipseIntegration started
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-26 14:43:01.153
+!MESSAGE Java UNO resources changes are now listened
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-26 14:43:01.161
+!MESSAGE Resources changes are now listened
+!SESSION 2009-05-26 18:10:49.497 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.fullversion=GNU libgcj 4.3.3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 18:10:53.235
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 18:10:53.235
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 18:10:53.235
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-26 18:10:53.235
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-26 18:11:03.509
+!MESSAGE OOEclipseIntegration started
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-26 18:11:06.302
+!MESSAGE Java UNO resources changes are now listened
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-26 18:11:06.307
+!MESSAGE Resources changes are now listened
+
+!ENTRY org.eclipse.ui 4 4 2009-05-27 01:23:53.106
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-27 01:23:53.106
+!MESSAGE java.util.ConcurrentModificationException
+!STACK 0
+java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.switchPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.next(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$KeyListener.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.custom.StyledTextListener.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.notifyListeners(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText.handleKeyDown(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.custom.StyledText$7.handleEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.sendKeyEvent(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Control.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Composite.gtk_key_press_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Widget.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.windowProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.gtk_main_do_event(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.eventProc(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS._g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.internal.gtk.OS.g_main_context_iteration(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+
+!ENTRY org.eclipse.ui 4 4 2009-05-27 01:24:01.400
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-27 01:24:01.400
+!MESSAGE Failed to execute runnable (java.util.ConcurrentModificationException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.util.ConcurrentModificationException)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.util.ConcurrentModificationException
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more
+!SESSION 2009-05-27 06:41:52.418 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.fullversion=GNU libgcj 4.3.3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-27 06:41:56.101
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-27 06:41:56.101
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-27 06:41:56.101
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-27 06:41:56.101
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-27 06:42:07.108
+!MESSAGE OOEclipseIntegration started
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-27 06:42:09.989
+!MESSAGE Java UNO resources changes are now listened
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-27 06:42:09.997
+!MESSAGE Resources changes are now listened
+!SESSION 2009-05-27 14:27:16.938 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.fullversion=GNU libgcj 4.3.3
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86_64
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-27 14:27:20.769
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-27 14:27:20.769
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-27 14:27:20.769
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2009-05-27 14:27:20.769
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-27 14:27:28.921
+!MESSAGE OOEclipseIntegration started
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-27 14:27:30.727
+!MESSAGE Java UNO resources changes are now listened
+
+!ENTRY org.openoffice.ide.eclipse.core 1 1 2009-05-27 14:27:30.733
+!MESSAGE Resources changes are now listened
+
+!ENTRY org.eclipse.ui 4 4 2009-05-27 17:10:06.309
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2009-05-27 17:10:06.310
+!MESSAGE Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.ArrayIndexOutOfBoundsException: -1)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.SWT.error(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.runAsyncMessages(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.runUI(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(org.eclipse.ui.workbench_3.2.2.M20070119-0800.jar.so)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(org.eclipse.ui.ide_3.2.1.M20060915-1030.jar.so)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(org.eclipse.core.runtime_3.2.0.v20060603.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(org.eclipse.osgi_3.2.2.R32x_v20070118.jar.so)
+   at java.lang.reflect.Method.invoke(libgcj.so.90)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.ArrayIndexOutOfBoundsException: -1
+   at java.util.HashMap$HashIterator.next(libgcj.so.90)
+   at java.util.AbstractCollection.removeAllInternal(libgcj.so.90)
+   at java.util.AbstractCollection.removeAll(libgcj.so.90)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.setTargetPositions(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedPositionAnnotations.switchToPosition(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.redraw(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.disconnect(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI.leave(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.jface.text.link.LinkedModeUI$Closer$1.run(org.eclipse.jface.text_3.2.2.r322_v20070104.jar.so)
+   at org.eclipse.swt.widgets.RunnableLock.run(org.eclipse.swt.gtk.linux.x86_64_3.2.2.v3236.jar.so)
+   ...18 more

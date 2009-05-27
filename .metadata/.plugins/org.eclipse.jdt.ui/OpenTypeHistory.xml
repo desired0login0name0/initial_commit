@@ -2,5 +2,6 @@
 <typeInfoHistroy>
   <typeInfo name="EJava" package="ejava" enclosingTypes="" path="/EJava/src/ejava/EJava.java" modifiers="513" timestamp="1243095849000"/>
   <typeInfo name="RuntimeException" package="java.lang" enclosingTypes="" path="/usr/lib/jvm/java-1.5.0-gcj-4.3-1.5.0.0/jre/lib/rt.jar|java/lang/RuntimeException.class" modifiers="33" timestamp="1237389386000"/>
-  <typeInfo name="DocumentConverter" package="oooms" enclosingTypes="" path="/OOoMS/src/oooms/DocumentConverter.java" modifiers="1" timestamp="1243217754000"/>
+  <typeInfo name="DocumentConverter" package="oooms" enclosingTypes="" path="/OOoMS/src/oooms/DocumentConverter.java" modifiers="1" timestamp="1243382229000"/>
+  <typeInfo name="Connection" package="connection" enclosingTypes="" path="/OOoMS/src/connection/Connection.java" modifiers="1025" timestamp="1243388992000"/>
 </typeInfoHistroy>

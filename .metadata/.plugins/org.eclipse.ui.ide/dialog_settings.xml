@@ -16,6 +16,13 @@
 		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
 		</list>
 	</section>
+	<section name="DialogMarkerPropertiesDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="422"/>
+		<item key="DIALOG_HEIGHT" value="343"/>
+		<item key="DIALOG_WIDTH" value="847"/>
+		<item key="DIALOG_Y_ORIGIN" value="274"/>
+		<item key="DIALOG_FONT_NAME" value="1|Sans|10|0|GTK|1|"/>
+	</section>
 	<section name="ResourceNavigator">
 		<item key="ResourceViewer.STORE_SORT_TYPE" value="1"/>
 		<item key="ResourceWorkingSetFilter.STORE_WORKING_SET" value="Aggregate for window 1243074340947"/>

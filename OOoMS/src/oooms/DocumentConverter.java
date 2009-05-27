@@ -12,18 +12,32 @@ import com.sun.star.util.XCloseable;
 
 public class DocumentConverter {
 	private XComponentLoader document;
+	private XStorable xStorable;
 	public DocumentConverter ( XComponentLoader document ) {
 		this.document = document;
 	}
 	public void convert ( String loadURL, String filtername, String saveURL ) {
 		comment ( "converting a document" );
+		XComponent xComponent = newDocumentComponentFromTemplate ( loadURL );
+		storeDocumentComponent ( xComponent, saveURL, filtername );
+		close ();
+	}
+	protected XComponent newDocumentComponentFromTemplate ( String loadURL ) {
+		comment ( "load a document as template" );
 		XComponent xComponent;
-		PropertyValue [] loadProperties = new PropertyValue [ 1 ];
+		comment ( "define load properties"
+			+ "\ntell the office to create a new document from the given file" );
+		PropertyValue [] loadProperties = new PropertyValue [ 2 ];
 		PropertyValue asTemplate = new PropertyValue ();
 		asTemplate.Name = "AsTemplate";
 		asTemplate.Value = Boolean.TRUE;
+		PropertyValue hidden = new PropertyValue ();
+		hidden.Name = "Hidden";
+		hidden.Value = Boolean.TRUE;
 		loadProperties [ 0 ] = asTemplate;
+		loadProperties [ 1 ] = hidden;
 		try {
+			comment ( "load" );
 			xComponent = document.loadComponentFromURL (
 				loadURL.toString (), "_blank", 0, loadProperties );
 		} catch ( IOException exception ) {
@@ -31,20 +45,27 @@ public class DocumentConverter {
 		} catch ( IllegalArgumentException exception ) {
 			throw new OOoMSException ( exception );
 		}
-		XStorable xStorable = ( XStorable )
-			UnoRuntime.queryInterface ( XStorable.class, xComponent );
-		PropertyValue [] propertyValue = new PropertyValue [ 2 ];
-		propertyValue [ 0 ] = new PropertyValue ();
-		propertyValue [ 0 ].Name = "Overwrite";
-		propertyValue [ 0 ].Value = Boolean.TRUE;
-		propertyValue [ 1 ] = new PropertyValue ();
-		propertyValue [ 1 ].Name = "FilterName";
-		propertyValue [ 1 ].Value = filtername;
+		return xComponent;
+	}
+	protected void storeDocumentComponent (
+		XComponent document, String storeURL, String filtername ) {
+		comment ( "store a document, using a filter" );
+		xStorable = ( XStorable )
+			UnoRuntime.queryInterface ( XStorable.class, document );
+		PropertyValue [] storeProperties = new PropertyValue [ 2 ];
+		storeProperties [ 0 ] = new PropertyValue ();
+		storeProperties [ 0 ].Name = "FilterName";
+		storeProperties [ 0 ].Value = filtername;
+		storeProperties [ 1 ] = new PropertyValue ();
+		storeProperties [ 1 ].Name = "Overwrite";
+		storeProperties [ 1 ].Value = Boolean.TRUE;
 		try {
-			xStorable.storeAsURL ( saveURL.toString (), propertyValue );
+			xStorable.storeAsURL ( storeURL, storeProperties );
 		} catch ( IOException exception ) {
 			throw new OOoMSException ( exception );
 		}
+	}
+	protected void close () {
 		comment ( "closing a document" );
 		XCloseable xCloseable = ( XCloseable )
 			UnoRuntime.queryInterface ( XCloseable.class, xStorable );

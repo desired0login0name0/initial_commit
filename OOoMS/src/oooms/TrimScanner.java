@@ -1,50 +1,62 @@
 package oooms;
 
-import com.sun.star.comp.helper.Bootstrap;
-import com.sun.star.comp.helper.BootstrapException;
-import com.sun.star.frame.XComponentLoader;
-import com.sun.star.lang.XMultiComponentFactory;
-import com.sun.star.uno.Exception;
+import com.sun.star.container.NoSuchElementException;
+import com.sun.star.container.XEnumerationAccess;
+import com.sun.star.container.XNameAccess;
+import com.sun.star.lang.WrappedTargetException;
+import com.sun.star.text.XTextFieldsSupplier;
 import com.sun.star.uno.UnoRuntime;
-import com.sun.star.uno.XComponentContext;
+import com.sun.star.util.XRefreshable;
 
+import connection.Connection;
+import connection.UNOURLResolverConnection;
 import ejava.Scanner;
+import ejava.TokenVisitor;
 
 public class TrimScanner implements Scanner {
-	private XComponentLoader xComponentLoader;
-	private XMultiComponentFactory xMultiComponentFactory;
-	private XComponentContext xComponentContext;
+	private XEnumerationAccess xEnumeratedTextFields;
+	private XNameAccess xNamedTextFieldMasters;
+	private Connection connection;
 	public TrimScanner ( String source ) {
-		useConnection ();
-		comment ( "creating the service of desktop" );
-		Object desktop;
-		try {
-			desktop = xMultiComponentFactory.createInstanceWithContext (
-				"com.sun.star.frame.Desktop", xComponentContext );
-		} catch ( Exception exception ) {
-			throw new OOoMSException ( exception );
-		}
-		comment ( "querying for the interface xcomponentloader on the desktop" );
-		xComponentLoader = ( XComponentLoader )
-			UnoRuntime.queryInterface ( XComponentLoader.class, desktop );
+		connection = new UNOURLResolverConnection (
+			UNOURLResolverConnection.defaultUNOURL );
+		connection.use ();
 	}
 	public void scan () {
-		// fix_me
+		comment ( "loaded template" );
+		comment ( "get xtextfieldssupplier interface from document component" );
+		XTextFieldsSupplier xTextFieldsSupplier = ( XTextFieldsSupplier )
+			UnoRuntime.queryInterface (
+				XTextFieldsSupplier.class, connection.getXComponentContext () );
+		comment ( "access the textfieldmasters collection" );
+		xNamedTextFieldMasters = xTextFieldsSupplier.getTextFieldMasters ();
+		comment ( "access the textfields collection" );
+		xEnumeratedTextFields = xTextFieldsSupplier.getTextFields ();
 	}
-	protected void useConnection () {
-		comment ( "getting a remote office component context" );
-		try {
-			xComponentContext = Bootstrap.bootstrap ();
-			comment ( "connected to a running office" );
-		} catch ( BootstrapException exception ) {
-			throw new OOoMSException ( exception );
+	public void eachToken ( TokenVisitor v ) {
+		eachToken ( v );
+	}
+	public void eachTrim ( TokenVisitor v ) {
+		String [] elements = xNamedTextFieldMasters.getElementNames ();
+		for ( String element : elements ) {
+			comment ( "access corresponding field master" );
+			Object fieldMaster;
+			try {
+				fieldMaster = xNamedTextFieldMasters.getByName ( element );
+			} catch ( NoSuchElementException exception ) {
+				throw new OOoMSException ( exception );
+			} catch ( WrappedTargetException exception ) {
+				throw new OOoMSException ( exception );
+			}
+			v.withToken ( fieldMaster );
 		}
-		comment ( "getting the remote office service manager" );
-		xMultiComponentFactory = xComponentContext.getServiceManager ();
-		comment ( "remote servicemanager is "
-			+ xMultiComponentFactory != null ? "available" : "not available" );
+		comment ( "refresh the textfields collection" );
+		XRefreshable xRefreshable = ( XRefreshable )
+			UnoRuntime.queryInterface (
+				XRefreshable.class, xEnumeratedTextFields );
+		xRefreshable.refresh ();
 	}
-	private void comment ( String s ) {
+	protected void comment ( String s ) {
 		new Comment ().log ( s );	// to_do
 	}
 }
